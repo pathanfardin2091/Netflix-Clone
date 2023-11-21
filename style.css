@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.temp_bg{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.header_area{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow:none;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+.main_bg_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.black_layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0) 0%, rgba(0, 0, 0, 0.046) 30%, rgba(0,0,0) 100% );
+    opacity: 0.9;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav_bar{
+    position: relative;
+    margin: auto;
+    z-index: 10;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    top: -20px;
+    justify-content: space-between;
+}
+
+.right_part_of_nav{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.right_part_of_nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px 4px 10px;
+    border-radius: 3px;
+}
+
+.language_button{
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signin_button{
+    margin-left: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.header{
+    position: relative;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+.header> .header_title{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    font-size: 3em;
+}
+
+.input_tag{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tag_line{
+    font-size: 1.6em;
+}
+
+.get_started_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.input_container{
+    min-width: 30%;
+    border-radius: 5px;
+    border: 0.5px solid white;
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 10px;
+    color: white;
+}
+
+
+@media screen and (max-width: 520px){
+    
+    .nav_bar{
+    display: flex;
+    flex-direction: column;
+    
+}
+}
+
+@media screen and (max-width: 700px){
+    
+    .header_area{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+
+}
+
+
+.container_2nd{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+.container_3rd{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+
+
+.container_4th{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+
+.container_5th{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+.frequently_asked{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 6px solid rgb(45, 43, 43);
+}
+
+
+@media screen and (max-width: 1100px){
+    .container_5th, .container_4th, .container_3rd, .container_2nd{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+}
